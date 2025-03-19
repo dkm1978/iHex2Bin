@@ -71,7 +71,7 @@
 //==================================
 
 //======================================
-//= Many thanks to Proteus fo this
+//= Many thanks to Proteus for this
 //= console regarding procedure
 //======================================
 #ifdef _WIN32 // WIN compiler or other?
@@ -86,7 +86,7 @@ WORD m_currentConsoleAttr;
 CONSOLE_SCREEN_BUFFER_INFO csbi;
 
 
-void deInitConsole() // return console attributes
+void deInitConsole() // restore console attributes
 {
 	SetConsoleMode(hStdOut, originalMode);
 	SetConsoleTextAttribute(hStdOut, m_currentConsoleAttr);
